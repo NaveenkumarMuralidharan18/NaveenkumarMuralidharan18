@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a;
+    bool Vowel;
+
+    cout << "Enter an alphabet: ";
+    cin >> a;
+
+    
+    Vowel = (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u');
+
+
+    
+    if (!isalpha(a))
+      printf("Error! Non-alphabetic character.");
+    else if (Vowel)
+        cout << a << " is a vowel.";
+    else
+        cout << a << " is a consonant.";
+
+    return 0;
+}
